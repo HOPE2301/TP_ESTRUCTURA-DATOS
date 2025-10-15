@@ -28,9 +28,15 @@ Class Personaje():
 
     def info(self):
             return  f" el personaje: {self_nombre} es de la especie {self_especie} y pertenece al planeta {self_planeta}"
-        
+
+    def agregar (self,dato):
+            if dato == class_._name:
+                  return self_habilidad.append(personaje)
 
 
 
-    
+
+
+
+
 
