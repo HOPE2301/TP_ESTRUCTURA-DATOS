@@ -1,0 +1,7 @@
+Class Objeto():
+      def __init__ (self, nombre,nivel_objeto):
+          self_nombre = nombre
+          self_ nivel_objeto = nivel_objeto
+
+      def datos(self):
+          print (f"el objeto {self_nombre} tiene  un nivel de {self_nivel_objeto} ")
