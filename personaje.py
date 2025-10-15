@@ -1,0 +1,42 @@
+Class Personaje:
+    def__init__(self,nombre,especie,planeta,nivel_poder):
+          self_nombre = nombre
+          self_especie = especie
+          self_planeta = planeta
+          self_habilidad = []
+          self_inventario = []
+          self_nivel_poder = 0
+
+     def get_nombre (self):
+          return self_nombre
+
+     def set_nombre(self,nombre):
+          self_nombre = nombre 
+
+     def get_especie (self):
+          return self_especie
+
+     def set_especie(self,especie):
+          self_especie = especie         
+
+    def get_planeta(self):
+          return self_planeta = planeta
+
+    def set_planeta(self,planeta):
+          self_planeta = planeta
+
+
+    def info(self):
+          print  (f" el personaje: {self_nombre} es de la especie {self_especie} y pertenece al planeta {self_planeta}")
+
+    def agregar(self,dato):
+          if dato == class_._name:
+               return self_habilidad.append(personaje)
+
+
+
+
+
+
+
+
