@@ -1,10 +1,19 @@
-class Objeto():
-       def __init__(self, nombre,nivel_poder):
-              self.nombre = nombre
-              self.nivel_poder = nivel_poder
+class Objeto:
+    def __init__(self,nombre,nivel_poder):
+        self.nombre = nombre
+        self.nivel_poder = nivel_poder
 
-       def datos(self):
-              print (f"     el objeto {self.nombre} tiene un nivel de poder de {self.nivel_poder} ")
-       #Esta funciona sirver para el metodo agregar de la clase personaje, es un tipo de duck typing
-       def soy_objeto(self):
-              return True
+    def get_nombre (self):
+        return self.nombre
+    
+    def set_nombre(self,nombre):
+        self.nombre = nombre
+
+    def get_nivel_poder(self):
+        return self.nivel_poder
+    
+    def set_nivel_poder(self,nivel_poder):
+        self.nivel_poder = nivel_poder
+
+    def informacion(self):
+        print (f" el objeto {self.nombre} tiene un nivel de poder de: {self.get_nivel_poder}")
