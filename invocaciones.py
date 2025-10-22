@@ -1,27 +1,28 @@
-# importe todas las clases necesarias para la invoaciones, y cree instancias para probar el codigo.
-from personaje import Personaje
-from habilidad import Habilidad
-from objeto import Objeto
-from funciones_comunes import linea_separadora
+from personaje import *
+from habilidad import *
+from objeto import *
 
 
-personaje1 = Personaje ("Estif", "Humano", "Tierra")
-personaje2 = Personaje ("Lucas", "Patoide", "Marte")
-personaje3 = Personaje ("Camila", "Insectoide", "Marte")
+#invocaciones:
+personaje1 = Personaje("Estif", "Humano", "Tierra")
+personaje2 = Personaje("Lucas", "Patoide", "Marte")
+personaje3 = Personaje("Camila", "Insectoide", "Marte")
 
-personaje1.info()
-linea_separadora()
-personaje2.info()
-linea_separadora()
-personaje3.info()
+habilidad1 = Habilidad("Cocinero", "Principiante")
+habilidad2 = Habilidad("Repostero","intermedio" )
+habilidad3 = Habilidad("Combate", "Intermedio")
+habilidad4 = Habilidad("Velocidad", "Experto")
+habilidad5 = Habilidad("Cazar", "Principiante")
+habilidad6 = Habilidad("Volar", "Intermedio")
 
-habilidad1 = Habilidad ("cocinar", 1, 5)
-habilidad2 = Habilidad ("pelear", 3, 15)
-objeto1 = Objeto ("espada", 10)
-personaje1.agregar(habilidad1)
-personaje1.agregar(habilidad2)
-personaje1.agregar(objeto1)
 
-linea_separadora()
+personaje1.agregar_habilidad(habilidad1)
+personaje1.agregar_habilidad(habilidad2)
+personaje2.agregar_habilidad(habilidad3)
+personaje3.agregar_habilidad(habilidad4)
+personaje3.agregar_habilidad(habilidad5)
+personaje3.agregar_habilidad(habilidad6)
 
-personaje1.info()
+datos(personaje1)
+datos(personaje2)
+datos(personaje3)
