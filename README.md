@@ -15,8 +15,7 @@
 - --->  Ordenamiento, Problemas NP y Sintesis Final.  
 ️
 ### ☑️Items a desarrollar:  
-* Definir la clase  Personaje con atributos: nombre, especie, plmaciones o fusiones.
-aneta, habilidades, inventario, nivel de poder, etc.
+* Definir la clase  Personaje con atributos: nombre, especie,planeta, habilidades, inventario, nivel de poder, etc.
 * Implementar interfaces para agregar/eliminar habilidades y objetos del inventario.
 * Implementar una estructura recursiva para calcular el poder total de un personaje considerando transformaciones o fusiones.
 
