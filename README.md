@@ -5,7 +5,7 @@
 
 [Cañette Yanina]
 [D Lucas]
-[Garrida Gonzalo]
+[Garriga Gonzalo]
 [   Angel]
 
 ✅ Temas a Tratar:
