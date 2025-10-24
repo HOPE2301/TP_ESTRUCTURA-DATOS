@@ -1,5 +1,5 @@
-📌 Trabajo Practico "ESTRUCTURA DE DATOS" COM-05
-➡️ Tema Elegido: "UNIVERSO DE PERSONAJES DE CIENCIA FICCION"
+# 📌 Trabajo Practico "ESTRUCTURA DE DATOS" COM-05
+## ➡️ Tema Elegido: "UNIVERSO DE PERSONAJES DE CIENCIA FICCION"
 
 👥 Integrantes:
 
@@ -8,14 +8,15 @@
 - ***Garriga Gonzalo*** @GG_EASY
 - ***Angel***
 
-✅ Temas a Tratar:
---->  Modelado y Encapsulamiento
---->  Arboles y Jerarquias
---->  Prioridades, Grafos y Algoritmos
---->  Ordenamiento, Problemas NP y Sintesis Final.
+### ✅ Temas a Tratar:
+- --->  Modelado y Encapsulamiento
+- --->  Arboles y Jerarquias
+- --->  Prioridades, Grafos y Algoritmos
+- --->  Ordenamiento, Problemas NP y Sintesis Final.  
 ️
-☑️Items a desarrollar:
-* Definir la clase  Personaje con atributos: nombre, especie, planeta, habilidades, inventario, nivel de poder, etc.
+### ☑️Items a desarrollar:  
+* Definir la clase  Personaje con atributos: nombre, especie, plmaciones o fusiones.
+aneta, habilidades, inventario, nivel de poder, etc.
 * Implementar interfaces para agregar/eliminar habilidades y objetos del inventario.
 * Implementar una estructura recursiva para calcular el poder total de un personaje considerando transformaciones o fusiones.
 
