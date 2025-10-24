@@ -5,9 +5,9 @@ class Personaje:
         self.planeta = planeta
         self.habilidad = []
         self.inventario = []
-        self.total_poder = 0
+        self.nivel_poder = []
 
-    def get_nombre (self):
+    def get_nombre(self):
         return self.nombre
     
     def set_nombre(self,nombre):
@@ -43,13 +43,15 @@ class Personaje:
             return f"este objeto ya se encuentra!"
         else:
             self.inventario.append(objeto)
+            self.nivel_poder.append(objeto.poder)
             return f"objeto agregado"
         
     def quitar_objeto(self,objeto):
         if objeto in self.inventario:
             return f"objeto no encontrado!!"
-        else:
+        else: 
             return self.inventario.remove(objeto)
+            return self.nivel_poder(objeto.poder)
         
 def datos(self):
     print(f"NOMBRE: {self.nombre}")
@@ -57,7 +59,16 @@ def datos(self):
     print(f"PLANETA: {self.planeta}")
     print (f"HABILIDADES:")
     for h in self.habilidad:
-        print(f"--> {h.nombre} : {h.nivel_habilidad}")
+        print(f"-->{h.nombre} -->nivel:{h.nivel_habilidad}")
+    print(f"OBJETOS:")
+    for o in self.inventario:
+        print(f"--->{o.nombre}  -->nivel de poder:{o.poder}")
+
+def sumar_poder(nivel_poder):
+    if len(nivel_poder) == 0:
+        return 0
+    else:
+         return nivel_poder[0] + sumar_poder(nivel_poder[1: ])
         
 
 
