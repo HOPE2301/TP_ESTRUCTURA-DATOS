@@ -6,7 +6,7 @@
 - ***Cañette Yanina*** @HOPE2301
 - ***D Lucas***
 - ***Garriga Gonzalo*** @GG_EASY
-- ***Angel***
+- ***Acosta Angel***
 
 ### ✅ Temas a Tratar:
 - --->  Modelado y Encapsulamiento
