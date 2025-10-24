@@ -43,7 +43,7 @@ class Personaje:
             return f"este objeto ya se encuentra!"
         else:
             self.inventario.append(objeto)
-            self.nivel_poder.append(objeto.poder)
+            self.nivel_poder.append(objeto.nivel_poder)
             return f"objeto agregado"
         
     def quitar_objeto(self,objeto):
@@ -51,7 +51,7 @@ class Personaje:
             return f"objeto no encontrado!!"
         else: 
             return self.inventario.remove(objeto)
-            return self.nivel_poder(objeto.poder)
+            #return self.nivel_poder(objeto.poder) #Aca esta return es imposible de llegar porque Remove devulve el objeto asi que sale de la funcion
         
 def datos(self):
     print(f"NOMBRE: {self.nombre}")
@@ -62,13 +62,13 @@ def datos(self):
         print(f"-->{h.nombre} -->nivel:{h.nivel_habilidad}")
     print(f"OBJETOS:")
     for o in self.inventario:
-        print(f"--->{o.nombre}  -->nivel de poder:{o.poder}")
+        print(f"--->{o.nombre}  -->nivel de poder:{o.nivel_poder}")
 
 def sumar_poder(nivel_poder):
     if len(nivel_poder) == 0:
         return 0
     else:
-         return nivel_poder[0] + sumar_poder(nivel_poder[1: ])
+        return nivel_poder[0] + sumar_poder(nivel_poder[1: ])
         
 
 
