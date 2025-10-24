@@ -48,11 +48,8 @@ personaje1.datos()
 print(f"---------------------------------------")
 personaje2.datos()
 print(f"---------------------------------------")
-personaje3.datos
+personaje3.datos()
 print(f"---------------------------------------")
 print(f"{personaje1.nombre} tiene una suma total de poder de: {personaje1.calcular_poder()}")
 print(f"{personaje2.nombre} tiene una suma total de poder de: {personaje2.calcular_poder()}")
 print(f"{personaje3.nombre} tiene una suma total de poder de: {personaje3.calcular_poder()}")
-
-
-

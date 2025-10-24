@@ -90,7 +90,7 @@ class Personaje:
 
     # def sumar_poder(nivel_poder):
     #     if len(nivel_poder) == 0:
-    #         return 0+
+    #         return 0
     #     else:
     #         return nivel_poder[0] + sumar_poder(nivel_poder[1: ])
         
