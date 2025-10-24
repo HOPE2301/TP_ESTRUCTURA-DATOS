@@ -1,7 +1,7 @@
 # 📌 Trabajo Practico "ESTRUCTURA DE DATOS" COM-05
 ## ➡️ Tema Elegido: "UNIVERSO DE PERSONAJES DE CIENCIA FICCION"
 
-👥 Integrantes:
+### 👥 Integrantes:
 
 - ***Cañette Yanina*** @HOPE2301
 - ***D Lucas***
