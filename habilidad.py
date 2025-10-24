@@ -20,3 +20,7 @@ class Habilidad:
     def info(self):
         print (f" {self.nombre} tiene un nivel de habilidad de: {self.nivel_habilidad}")
         
+class transformacion(Habilidad):
+    def __init__(self, nombre, multiplicador):
+        super().__init__(nombre, multiplicador)
+        self.multiplicador = multiplicador
