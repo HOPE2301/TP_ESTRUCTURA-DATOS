@@ -15,7 +15,7 @@ habilidad4 = Habilidad("Velocidad", "Experto")
 habilidad5 = Habilidad("Cazar", "Principiante")
 habilidad6 = Habilidad("Volar", "Intermedio")
 
-transformacion1 = transformacion ("Profecional", 2)
+transformacion1 = transformacion("Profesional", 2)
 
 personaje1.agregar_habilidad(habilidad1)
 personaje1.agregar_habilidad(habilidad2)
