@@ -3,7 +3,7 @@ class Objeto:
         self.nombre = nombre
         self.nivel_poder = nivel_poder
 
-    def get_nombre (self):
+    def get_nombre(self):
         return self.nombre
     
     def set_nombre(self,nombre):
@@ -16,4 +16,4 @@ class Objeto:
         self.nivel_poder = nivel_poder
 
     def informacion(self):
-        print (f" el objeto {self.nombre} tiene un nivel de poder de: {self.get_nivel_poder}")
+        print (f" el objeto {self.nombre} tiene un nivel de poder de: {self.nivel_poder}")
