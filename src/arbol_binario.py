@@ -4,7 +4,7 @@ class ArbolBinario:
     def __init__(self, raiz=None):
         self.raiz = raiz
 
-    def _formato(self, item):
+    def _formato_(self, item):
         nombre = None
         if hasattr(item, "nombre"):
             nombre = getattr(item, "nombre")
@@ -45,7 +45,7 @@ class ArbolBinario:
         if self.raiz is not None:
             if self.raiz.izquierdo:
                 listado += ArbolBinario(self.raiz.izquierdo).inorden()
-            listado.append(self._formato(self.raiz.data))
+            listado.append(self._formato_(self.raiz.data))
             if self.raiz.derecho:
                 listado += ArbolBinario(self.raiz.derecho).inorden()
         return listado
@@ -53,7 +53,7 @@ class ArbolBinario:
     def preorden(self):
         listado = []
         if self.raiz is not None:
-            listado.append(self._formato(self.raiz.data))
+            listado.append(self._formato_(self.raiz.data))
             if self.raiz.izquierdo:
                 listado += ArbolBinario(self.raiz.izquierdo).preorden()
             if self.raiz.derecho:
@@ -67,5 +67,15 @@ class ArbolBinario:
                 listado += ArbolBinario(self.raiz.izquierdo).postorden()
             if self.raiz.derecho:
                 listado += ArbolBinario(self.raiz.derecho).postorden()
-            listado.append(self._formato(self.raiz.data))
+            listado.append(self._formato_(self.raiz.data))
         return listado
+    
+    def busqueda(self, poder):
+        if self.raiz is not None:
+            if self.raiz.data.calcular_poder() == poder:
+                return self.raiz.data
+            elif poder < self.raiz.data.calcular_poder() and self.raiz.izquierdo is not None:
+                return ArbolBinario(self.raiz.izquierdo).busqueda(poder)
+            elif poder > self.raiz.data.calcular_poder() and self.raiz.derecho is not None:
+                return ArbolBinario(self.raiz.derecho).busqueda(poder)
+        return None

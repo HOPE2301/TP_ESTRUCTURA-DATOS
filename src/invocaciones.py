@@ -6,6 +6,10 @@ from objeto import *
 from arbol_binario import *
 from arbol_general import *
 
+def linea_separadora(simbolo="~",largo=90):
+    print(f"{simbolo}" * largo)
+
+
 
 #invocaciones:
 personaje1 = Personaje("Estif", "Humano", "Tierra")
@@ -49,11 +53,66 @@ personaje2.quitar_objeto(objeto4)
 personaje3.quitar_habilidad(habilidad4)
 
 personaje1.datos()
-print(f"---------------------------------------")
+linea_separadora()
 personaje2.datos()
-print(f"---------------------------------------")
+linea_separadora()
 personaje3.datos()
-print(f"---------------------------------------")
+linea_separadora()
 print(f"{personaje1.nombre} tiene una suma total de poder de: {personaje1.calcular_poder()}")
 print(f"{personaje2.nombre} tiene una suma total de poder de: {personaje2.calcular_poder()}")
 print(f"{personaje3.nombre} tiene una suma total de poder de: {personaje3.calcular_poder()}")
+
+#llamadas al arbol binario
+arbol_binario = ArbolBinario()
+arbol_binario.agregar(personaje1)
+arbol_binario.agregar(personaje2)
+arbol_binario.agregar(personaje3)
+print("Recorrido Inorden:")
+print(arbol_binario.inorden())
+linea_separadora()
+print("Recorrido Preorden:")
+print(arbol_binario.preorden())
+linea_separadora()
+print("Recorrido Postorden:")
+print(arbol_binario.postorden())
+
+
+#busqueda de personaje por poder
+poder_a_buscar = 275
+personaje_encontrado = arbol_binario.busqueda(poder_a_buscar)
+linea_separadora()
+if personaje_encontrado:
+    print(f"Personaje encontrado con poder {poder_a_buscar}: {personaje_encontrado.nombre}")
+else:
+    print(f"No se encontró ningún personaje con poder {poder_a_buscar}.")
+
+#llamadas del arbol general
+arbol_general = arbol_general(geNodo(personaje1))
+nodo_hab1 = geNodo(habilidad1)
+nodo_hab2 = geNodo(habilidad2)
+nodo_hab3 = geNodo(habilidad3)
+nodo_tra1 = geNodo(transformacion1)
+
+arbol_general.agregar_hijo(arbol_general.raiz, nodo_hab1)
+arbol_general.agregar_hijo(nodo_hab1, nodo_hab2)
+arbol_general.agregar_hijo(nodo_hab2, nodo_hab3)
+
+arbol_general.agregar_hijo(arbol_general.raiz, nodo_tra1)
+# metodo de arbol General
+print("Recorrido Inorden del Arbol General:")
+print(arbol_general.inorden())
+linea_separadora()
+print("Recorrido Preorden del Arbol General:")
+print(arbol_general.preorden())
+linea_separadora()
+print("Recorrido Postorden del Arbol General:")
+print(arbol_general.postorden())
+
+# busqueda en arbol general
+nombre_a_buscar = "Repostero"
+nodo_encontrado = arbol_general.busqueda(nombre_a_buscar)
+linea_separadora()
+if nodo_encontrado:
+    print(f"Nodo encontrado con nombre '{nombre_a_buscar}': {nodo_encontrado.datos.nombre}")
+else:
+    print(f"No se encontró ningún nodo con nombre '{nombre_a_buscar}'.")
