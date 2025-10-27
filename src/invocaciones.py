@@ -19,7 +19,7 @@ habilidad4 = Habilidad("Velocidad", "Experto")
 habilidad5 = Habilidad("Cazar", "Principiante")
 habilidad6 = Habilidad("Volar", "Intermedio")
 
-transformacion1 = transformacion ("Profecional", 2)
+transformacion1 = transformacion("Profesional", 2)
 
 personaje1.agregar_habilidad(habilidad1)
 personaje1.agregar_habilidad(habilidad2)
@@ -57,39 +57,3 @@ print(f"---------------------------------------")
 print(f"{personaje1.nombre} tiene una suma total de poder de: {personaje1.calcular_poder()}")
 print(f"{personaje2.nombre} tiene una suma total de poder de: {personaje2.calcular_poder()}")
 print(f"{personaje3.nombre} tiene una suma total de poder de: {personaje3.calcular_poder()}")
-
-#pruebas del arbol BINARIO
-aRaiz = ArbolBinario()
-nodo_estid = BiNodo(personaje1) #persona Estif poder 275
-nodo_lucas = BiNodo(personaje2) #persona Lucas poder 40
-nodo_camila = BiNodo(personaje3) #persona Camila poder 100
-
-aRaiz.agregar(personaje1)
-aRaiz.agregar(personaje3)
-aRaiz.agregar(personaje2)
-print("Recorrido Inorden:")
-print(aRaiz.inorden()) 
-print("Recorrido Preorden:")
-print(aRaiz.preorden())  
-print("Recorrido Postorden:")
-print(aRaiz.postorden())  
-
-#Prueba del arbol GENERAL
-arbol_habilidades = arbol_general(geNodo(personaje2))
-
-nodo_hab1 = geNodo(habilidad1)
-nodo_hab2 = geNodo(habilidad2)
-nodo_hab3 = geNodo(habilidad3)
-nodo_hab4 = geNodo(transformacion1)
-nodo_hab5 = geNodo(habilidad5)
-arbol_habilidades.agregar_hijo(arbol_habilidades.raiz, nodo_hab1)
-arbol_habilidades.agregar_hijo(arbol_habilidades.raiz, nodo_hab5)
-arbol_habilidades.agregar_hijo(nodo_hab1, nodo_hab2)
-arbol_habilidades.agregar_hijo(nodo_hab2, nodo_hab3)
-arbol_habilidades.agregar_hijo(arbol_habilidades.raiz, nodo_hab5)
-print("Recorrido Inorden del arbol general de habilidades de Lucas:")
-print(arbol_habilidades.inorden())
-print("Recorrido Preorden del arbol general de habilidades de Lucas:")
-print(arbol_habilidades.preorden())
-print("Recorrido Postorden del arbol general de habilidades de Lucas:")
-print(arbol_habilidades.postorden())
