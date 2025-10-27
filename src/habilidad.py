@@ -1,7 +1,8 @@
 class Habilidad:
     def __init__(self,nombre,nivel_habilidad):
         self.nombre = nombre
-        self.nivel_habilidad = nivel_habilidad
+        aux = {"Principiante": 1, "Intermedio": 2, "Profesional": 3}
+        self.nivelNum = aux.get(nivel_habilidad, 0)
 
 
     def get_nombre(self):

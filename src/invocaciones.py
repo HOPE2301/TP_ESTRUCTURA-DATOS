@@ -1,6 +1,10 @@
+from nodo_bi import *
+from nodo_ge import *
 from personaje import *
 from habilidad import *
 from objeto import *
+from arbol_binario import *
+from arbol_general import *
 
 
 #invocaciones:
@@ -10,7 +14,7 @@ personaje3 = Personaje("Camila", "Insectoide", "Marte")
 
 habilidad1 = Habilidad("Cocinero", "Principiante")
 habilidad2 = Habilidad("Repostero","intermedio" )
-habilidad3 = Habilidad("Combate", "Intermedio")
+habilidad3 = Habilidad("Chef", "Experto")
 habilidad4 = Habilidad("Velocidad", "Experto")
 habilidad5 = Habilidad("Cazar", "Principiante")
 habilidad6 = Habilidad("Volar", "Intermedio")
