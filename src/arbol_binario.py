@@ -65,7 +65,7 @@ class ArbolBinario:
         if self.raiz is not None:
             if self.raiz.izquierdo:
                 listado += ArbolBinario(self.raiz.izquierdo).postorden()
-            if self.raiz.derecho:
+            if self.raiz.derecho: 
                 listado += ArbolBinario(self.raiz.derecho).postorden()
             listado.append(self._formato_(self.raiz.data))
         return listado
