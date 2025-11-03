@@ -7,7 +7,7 @@ from arbol_binario import *
 from arbol_general import *
 
 def linea_separadora(simbolo="~",largo=90):
-    print(f"{simbolo}" * largo)
+    print(f"{simbolo}" * largo) 
 
 
 
