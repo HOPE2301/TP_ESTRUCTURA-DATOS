@@ -77,23 +77,6 @@ class Personaje:
             nivel = getattr(o, "nivel_poder", "")
             print(f"--->{nombre}  -->nivel de poder:{nivel}")
         
-#   def datos(self):
-#     print(f"NOMBRE: {self.nombre}")
-#     print(f"ESPECIE: {self.especie}")
-#     print(f"PLANETA: {self.planeta}")
-#     print (f"HABILIDADES:")
-#     for h in self.habilidad:
-#         print(f"-->{h.nombre} -->nivel:{h.nivel_habilidad}")
-#     print(f"OBJETOS:")
-#     for o in self.inventario:
-#         print(f"--->{o.nombre}  -->nivel de poder:{o.nivel_poder}")
-
-    # def sumar_poder(nivel_poder):
-    #     if len(nivel_poder) == 0:
-    #         return 0
-    #     else:
-    #         return nivel_poder[0] + sumar_poder(nivel_poder[1: ])
-        
     def calcular_poder(self):
         # aca hay recursivad
         def _sumar(lista):
