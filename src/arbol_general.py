@@ -62,7 +62,7 @@ class arbol_general:
         if nombre_buscar_lower == self._nombre_de(nodo.datos).lower():
             return nodo
         for hijo in nodo.hijos:
-            resultado = self.busqueda(nombre_buscar, hijo)
+            resultado = self.busqueda(nombre_buscar, hijo) 
             if resultado is not None:
                 return resultado
         return None
