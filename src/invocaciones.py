@@ -8,7 +8,7 @@ from arbol_general import *
 
 
 #invocaciones:
-personaje1 = Personaje("Estif", "Humano", "Tierra")
+personaje1 = Personaje("Steve", "Humano", "Tierra")
 personaje2 = Personaje("Lucas", "Patoide", "Marte")
 personaje3 = Personaje("Camila", "Insectoide", "Marte")
 
