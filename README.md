@@ -32,7 +32,7 @@
 * Realizar un análisis de eficiencia de las principales operaciones implementadas.
 * Implementar recorridos (preorden, inorden, postorden) y búsquedas en ambos árboles.
 
-### ✅ links a materiales obligatorios:
+### ✅ links a materiales adicionales(TEORIA):
 - ---> Presentación de dispositivas: https://www.canva.com/design/DAG4BaL1TVY/_VdXljn8K3DU8gSVNkGBrw/edit?utm_content=DAG4BaL1TVY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 -  ---> Infografia de arboles: https://drive.google.com/drive/folders/1ZIj9G5Kr4yp2fWAaLBChu8J7lLJY_JyU?usp=sharing
 -  ---> Video explicativo :
