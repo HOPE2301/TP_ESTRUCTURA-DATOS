@@ -4,7 +4,7 @@
 ### 👥 Integrantes:
 
 - ***Cañette Yanina*** @HOPE2301
-- ***Dome Lucas***
+- ***Dome Lucas*** @DigitalRivers
 - ***Garriga Gonzalo*** @GG_EASY
 - ***Acosta Angel***
 
