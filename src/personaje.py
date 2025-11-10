@@ -23,7 +23,7 @@ class Personaje:
         return self.planeta
     
     def set_planeta(self,planeta):
-        self.planeta = planeta
+        self.planeta = str(planeta)
 
     def agregar_habilidad(self,habilidad):
         if habilidad in self.habilidad:

@@ -5,11 +5,10 @@ from habilidad import *
 from objeto import *
 from arbol_binario import *
 from arbol_general import *
+from sistema_planetario import *
 
 def linea_separadora(simbolo="~",largo=90):
     print(f"{simbolo}" * largo) 
- 
-
 
 #invocaciones:
 personaje1 = Personaje("Steve", "Humano", "Tierra")
@@ -61,6 +60,26 @@ linea_separadora()
 print(f"{personaje1.nombre} tiene una suma total de poder de: {personaje1.calcular_poder()}")
 print(f"{personaje2.nombre} tiene una suma total de poder de: {personaje2.calcular_poder()}")
 print(f"{personaje3.nombre} tiene una suma total de poder de: {personaje3.calcular_poder()}")
+
+## construcción del sistema de planetas (y viajes usando Dijkstra)
+planeta_1 = Planeta("Tierra", "Alianza Humana")
+planeta_2 = Planeta("Marte", "Alianza Humana")
+planeta_3 = Planeta("Venus", "Alianza Mosquito")
+planeta_4 = Planeta("Jupiter", "Alianza Mosquito")
+
+## asignar planetas a personajes (es el planeta donde están, no de donde provienen)
+personaje1.set_planeta(planeta_1)
+personaje2.set_planeta(planeta_2)
+personaje3.set_planeta(planeta_3)
+
+## agregar conexiones entre planetas
+planeta_1.agregar_conexion(planeta_2, 10)
+planeta_1.agregar_conexion(planeta_3, 15)
+planeta_2.agregar_conexion(planeta_4, 12)
+planeta_3.agregar_conexion(planeta_4, 10)
+planeta_2.agregar_conexion(planeta_3, 5)
+
+planetas = [planeta_1, planeta_2, planeta_3, planeta_4] ## listado de planetas
 
 #llamadas al arbol binario
 arbol_binario = ArbolBinario()
@@ -116,3 +135,17 @@ if nodo_encontrado:
     print(f"Nodo encontrado con nombre '{nombre_a_buscar}': {nodo_encontrado.datos.nombre}")
 else:
     print(f"No se encontró ningún nodo con nombre '{nombre_a_buscar}'.")
+
+## uso de dijktra para viajar entre planetas
+## como ejemplo, el personaje 1 (Steve) viaja desde la Tierra hasta Jupiter
+ruta, distancia_total = dijkstra(planetas, planeta_1, planeta_4)
+camino = ""
+for planeta in ruta:
+    if camino == "":
+        camino = camino + str(planeta)
+    else:
+        camino = camino + " -> " + str(planeta)
+print(personaje1.get_nombre(),  "Viajará desde", str(planeta_1), " hasta", str(planeta_4))
+print("Ruta optima: ", camino + " Distancia total: ", distancia_total)
+personaje1.set_planeta(planeta_4)
+print(f"{personaje1.nombre} ahora se encuentra en el planeta: {personaje1.get_planeta()}")
