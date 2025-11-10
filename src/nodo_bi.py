@@ -5,7 +5,7 @@ class BiNodo:
         self.derecho = None
         
     def agregar(self, data):
-        if data.calcular_poder() < self.data.calcular_poder():
+        if data.calcular_poder() < self.data.calcular_poder(): 
             if self.izquierdo is None:
                 self.izquierdo = BiNodo(data)
             else:
