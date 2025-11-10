@@ -14,7 +14,6 @@ class Habilidad:
     def set_nombre(self,nombre):
         self.nombre = nombre   
 
-
     def info(self):
         print (f" {self.nombre} tiene un nivel de habilidad {self.nivel_habilidad}: {self.nivelNum}")
         
