@@ -11,10 +11,12 @@ def linea_separadora(simbolo="~",largo=90):
     print(f"{simbolo}" * largo) 
 
 #invocaciones:
+#creacion de personajes:
 personaje1 = Personaje("Steve", "Humano", "Tierra")
 personaje2 = Personaje("Lucas", "Patoide", "Marte")
 personaje3 = Personaje("Camila", "Insectoide", "Marte")
 
+#creacion de habilidades:
 habilidad1 = Habilidad("Cocinero", "Principiante")
 habilidad2 = Habilidad("Repostero","intermedio" )
 habilidad3 = Habilidad("Chef", "Experto")
@@ -22,8 +24,10 @@ habilidad4 = Habilidad("Velocidad", "Experto")
 habilidad5 = Habilidad("Cazar", "Principiante")
 habilidad6 = Habilidad("Volar", "Intermedio")
 
+#creacion de transformacion de habilidad:
 transformacion1 = Transformacion("Profesional", 2)
 
+#se agrega habilidades a los personajes:
 personaje1.agregar_habilidad(habilidad1)
 personaje1.agregar_habilidad(habilidad2)
 personaje2.agregar_habilidad(habilidad3)
@@ -33,6 +37,7 @@ personaje3.agregar_habilidad(habilidad6)
 
 personaje2.agregar_habilidad(transformacion1)
 
+#se crean objetos:
 objeto1 = Objeto("Espada", 20)
 objeto2 = Objeto("Sarten", 50)
 objeto3 = Objeto("Arco", 100)
@@ -40,6 +45,7 @@ objeto4 = Objeto("Capa",65)
 objeto5 = Objeto("Martillo",95)
 objeto6 = Objeto("Chuchillo",130)
 
+#se agregan objetos a los personajes:
 personaje1.agregar_objeto(objeto2)
 personaje1.agregar_objeto(objeto6)
 personaje1.agregar_objeto(objeto5)
@@ -47,10 +53,12 @@ personaje2.agregar_objeto(objeto4)
 personaje3.agregar_objeto(objeto3)
 personaje2.agregar_objeto(objeto1)
 
+#se quitan habilidades o objetos:
 personaje1.quitar_habilidad(habilidad2)
 personaje2.quitar_objeto(objeto4)
 personaje3.quitar_habilidad(habilidad4)
 
+#se muestran los cambios realizados en cada personaje y su poder total:
 personaje1.datos()
 linea_separadora()
 personaje2.datos()
