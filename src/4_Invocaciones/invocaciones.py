@@ -17,12 +17,12 @@ personaje2 = Personaje("Lucas", "Patoide", "Marte")
 personaje3 = Personaje("Camila", "Insectoide", "Marte")
 
 #creacion de habilidades:
-habilidad1 = Habilidad("Cocinero", "Principiante")
-habilidad2 = Habilidad("Repostero","intermedio" )
-habilidad3 = Habilidad("Chef", "Experto")
-habilidad4 = Habilidad("Velocidad", "Experto")
-habilidad5 = Habilidad("Cazar", "Principiante")
-habilidad6 = Habilidad("Volar", "Intermedio")
+habilidad1 = Habilidad("COCINERO", "Principiante")
+habilidad2 = Habilidad("REPOSTERO","intermedio" )
+habilidad3 = Habilidad("CHEF", "Experto")
+habilidad4 = Habilidad("VELOCIDAD", "Experto")
+habilidad5 = Habilidad("CAZAR", "Principiante")
+habilidad6 = Habilidad("VOLAR", "Intermedio")
 
 #creacion de transformacion de habilidad:
 transformacion1 = Transformacion("Profesional", 2)
