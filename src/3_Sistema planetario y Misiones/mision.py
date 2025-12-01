@@ -74,9 +74,14 @@ class Cola_Prioridad_Misiones:
         return mision
 
     def mostrar_misiones(self):
-        print("---- Cola de Prioridades ----")
-        for prioridad, mis in self.cola:
-            print(f"{mis.nombre} | Prioridad = {-prioridad}")
+        print("---- Cola de Prioridades (Ordenada) ----")
+        copia = self.cola.copy()
+        temp = []
+        while copia:
+            prioridad, mision = heapq.heappop(copia)
+            temp.append((-prioridad, mision))
+        for prioridad, mis in temp:
+            print(f"{mis.nombre} | Prioridad = {prioridad}")
 
 
 
