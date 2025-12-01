@@ -13,9 +13,6 @@ class Mision:
     def set_descirpcion_mision(self, descripcion):
         self.descripcion = descripcion
 
-    def set_recompensa_mision(self, recompensa):
-        self.recompensa = recompensa
-
     def agregar_recompensa_mision(self, recompensa):
         self.recompensa.append(recompensa)
         print(f'Se agregó "{recompensa}" a la lista de recompensas')
@@ -26,9 +23,6 @@ class Mision:
             print(f'Se eliminó "{recompensa}" de la lista de recompensas')
         else:
             print(f'"{recompensa}" no se encuentra en la lista de recompensas')
-
-    def set_enemigos_mision(self, enemigos):
-        self.enemigos = enemigos
 
     def agregar_enemigo_mision(self, enemigo):
         self.enemigos.append(enemigo)
