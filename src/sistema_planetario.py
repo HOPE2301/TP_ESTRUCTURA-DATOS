@@ -1,7 +1,7 @@
 ## Recibimos una lista de Planetas, con sus distancias entre sí y devolvemos la ruta mas optimizada usando Dijkstra.
 ## NOTA: En el grafo se deben informar las distancias entre todos los planetas conectados directamente.
 ## No usaremos librerías externas para el algoritmo de Dijkstra.
-
+from collections import deque # librería para usar una cola eficiente en BFS
 class Planeta:
     def __init__(self, nombre, alianza=None):
         '''
@@ -63,4 +63,32 @@ def dijkstra(planetas, inicio, fin,):
         actual = previos[actual]
     ruta.reverse() ## la ponemos de nuevo en orden.
     return ruta, distancias[fin] ## devolvemos la ruta y la distancia total
+## busqueda en profundidad
+def dfs(grafo, inicio, visitados=None):
+    if visitados is None:
+        visitados = set()
+    visitados.add(inicio)
+
+    for vecino in grafo[inicio]:
+        if vecino not in visitados:
+            dfs(grafo, vecino, visitados)
+    return visitados
+## busqueda en anchura
+def bfs(grafo, inicio): 
+    visitados = set([inicio])
+    cola = deque([inicio])
+
+    while cola:
+        nodo = cola.popleft()
+        for vecino in grafo[nodo]:
+            if vecino not in visitados:
+                visitados.add(vecino)
+                cola.append(vecino)
+    return visitados
+## esta funcion busca convertir el objeto Planeta en un grafo en el formato clasico, listo para usar BFS/DFS
+def construir_grafo(planetas):
+    grafo = {}
+    for p in planetas:
+        grafo[p] = list(p.conexiones.keys())
+    return grafo
 
