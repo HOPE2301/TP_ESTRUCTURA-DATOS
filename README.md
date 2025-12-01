@@ -36,4 +36,4 @@
 - ---> Presentación de dispositivas: https://www.canva.com/design/DAG4BaL1TVY/_VdXljn8K3DU8gSVNkGBrw/edit?utm_content=DAG4BaL1TVY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 -  ---> Poster de arboles: https://drive.google.com/drive/folders/1ZIj9G5Kr4yp2fWAaLBChu8J7lLJY_JyU?usp=sharing
 -  ---> Video explicativo :
--  ---> Pdf sintesis:
+-  ---> Pdf sintesis: https://drive.google.com/file/d/11Kh84BVh7K13E9yX6Ij-OY5BAQTm8n5j/view?usp=sharing
