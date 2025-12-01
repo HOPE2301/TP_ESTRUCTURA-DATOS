@@ -25,7 +25,7 @@ habilidad5 = Habilidad("Cazar", "Principiante")
 habilidad6 = Habilidad("Volar", "Intermedio")
 
 #creacion de transformacion de habilidad:
-transformacion1 = Transformacion("Profesional", 2)
+transformacion1 = Transformacion("Profesional",2,2)
 
 #se agrega habilidades a los personajes:
 personaje1.agregar_habilidad(habilidad1)
